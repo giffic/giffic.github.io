@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='utf-8' />
-  <meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible' />
-  <meta content='width=device-width, initial-scale=1.0' name='viewport' />
   <title>Giffic!</title>
-  <link href="stylesheets/stylesheet.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" integrity="sha384-4FeI0trTH/PCsLWrGCD1mScoFu9Jf2NdknFdFoJhXZFwsvzZ3Bo5sAh7+zL8Xgnd" crossorigin="anonymous">
+  <link href="assets/styles/style.css" rel="stylesheet">
 </head>
 <body>
-  <div class='container-fluid whole'>
-    <div class='row-fluid header'>
-      <div class='span5 brand'>
-        <img alt="Brand-patch" src="images/brand-patch.png" title="Giffic!" />
-      </div>
-      <div class='span7 nav'>
-        <ul>
-          <li>
-            <a href="http://myaccount.zendesk.com/account/dropboxes/2830039812" onClick="script: Zenbox.show(); return false;"><img alt="Contact-patch" src="images/contact-patch.png" title="Contacto" />
-            </a>
-          </li>
-        </ul>
-      </div>
+  <header class='row-fluid header'>
+    <div class='span5 brand'>
+      <img alt="Brand-patch" src="assets/images/patch-brand.png" title="Giffic!">
     </div>
+    <div class='span7 nav'>
+      <ul>
+        <li>
+          <a href="mailto:contacto@giffic.com">
+            <img alt="Contact-patch" src="assets/images/patch-contact.png" title="Contacto">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class='container-fluid'>
     <div class='row-fluid'>
-      <div class='row messages'>
+      <div class='row messages text-center'>
         <p class='white'>
           ¡Giffic App ya disponible en Play Store!
           <br>
@@ -36,7 +44,7 @@
         <ul>
           <li>
             <span>
-              <img alt="Gift-patch" src="images/gift-patch.png" title="Inspiración!" />
+              <img alt="Gift-patch" src="assets/images/patch-gift.png" title="Inspiración!">
               <br>
               Inspiración de ideas
               <br>
@@ -45,7 +53,7 @@
           </li>
           <li>
             <span>
-              <img alt="Collect-patch" src="images/collect-patch.png" title="Colecciona!" />
+              <img alt="Collect-patch" src="assets/images/patch-collect.png" title="Colecciona!">
               <br>
               Colecciona todo
               <br>
@@ -54,7 +62,7 @@
           </li>
           <li>
             <span>
-              <img alt="City-patch" src="images/city-patch.png" title="Recorre!" />
+              <img alt="City-patch" src="assets/images/patch-city.png" title="Recorre!">
               <br>
               Tu ciudad,
               <br>
@@ -63,7 +71,7 @@
           </li>
           <li>
             <span>
-              <img alt="Premium-patch" src="images/premium-patch.png" title="Descubre!" />
+              <img alt="Premium-patch" src="assets/images/patch-premium.png" title="Descubre!">
               <br>
               Productos destacados,
               <br>
@@ -73,48 +81,12 @@
         </ul>
       </div>
     </div>
-    <div class='row-fluid'>
-      <footer>
-        <p>© Diseñado por Giffic Labs</p>
-      </footer>
-    </div>
-  </div>
-  <!--
-  Javascripts
-  ==================================================
-  -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="javascripts/main.js" type="text/javascript"></script>
-  <script>
-    //<![CDATA[
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38160004-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    //]]>
-  </script>
-  <script src='//assets.zendesk.com/external/zenbox/v2.5/zenbox.js' type='text/javascript'></script>
-  <style media='screen, projection' type='text/css'>
-    @import url('//assets.zendesk.com/external/zenbox/v2.5/zenbox.css');
-  </style>
-  <script>
-    //<![CDATA[
-    if (typeof(Zenbox) !== "undefined") {
-      Zenbox.init({
-        dropboxID:   "20130593",
-        url:         "https://gifficlabs.zendesk.com",
-        tabID:       "Soporte",
-        tabColor:    "black",
-        tabPosition: "Right",
-        hide_tab: "true",
-      });
-    }
-    //]]>
-  </script>
+  </main>
+  <footer class='row-fluid text-center'>
+    <p>© Diseñado por Giffic</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js" integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js" integrity="sha384-vOWIrgFbxIPzY09VArRHMsxned7WiY6hzIPtAIIeTFuii9y3Cr6HE6fcHXy5CFhc" crossorigin="anonymous"></script>
+  <script src="assets/scripts/script.js"></script>
 </body>
 </html>
